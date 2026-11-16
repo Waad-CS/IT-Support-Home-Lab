@@ -1,5 +1,7 @@
 # Active Directory Lab
 
+[← Back to all labs](../README.md)
+
 A hands-on lab covering Windows Server 2022, Active Directory, and everyday help desk tasks, built in VirtualBox on a laptop with 8 GB of RAM. All accounts and passwords are lab-only test data.
 
 ## Lab environment
@@ -37,15 +39,15 @@ Renamed the server to `DC01`, installed the Active Directory Domain Services rol
 Created three organizational units (IT, HR, Sales), four test users, and a security group for each department with the matching members.
 
 ![Active Directory Users and Computers](screenshots/11-ad-users-and-computers.png)
-![OU structure](screenshots/12-ou-structure.png)
-![Group members](screenshots/13-group-members.png)
+![OU structure](screenshots/12-ou-structure.jpg)
+![Group members](screenshots/13-group-members.jpg)
 
 ## 4. Account management
 
 Practiced common help desk tasks: resetting a user's password and disabling an account.
 
 ![Reset password](screenshots/14-reset-password.png)
-![Disabled account](screenshots/15-disabled-account.png)
+![Disabled account](screenshots/15-disabled-account.jpg)
 
 ## 5. Domain member server
 
@@ -88,7 +90,3 @@ Created a Group Policy Object linked to the Sales OU that prohibits access to Co
 - **Duplicate IP address:** `ping` failed with "General failure" because SRV01 had the same IP as DC01. Assigning a unique address fixed it.
 - **Virtual machine aborted state:** Using "Save machine state" left a VM in an aborted state. A normal Windows shutdown avoids this.
 - **Password policy error:** A new user was rejected because the password did not meet the domain complexity policy.
-
-## Next steps
-
-See the [main README](../README.md) for the next labs.
